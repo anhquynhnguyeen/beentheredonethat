@@ -95,5 +95,5 @@ export function getStats() {
  * ISO country codes of visited countries — used to highlight the world map.
  */
 export function getVisitedCountryCodes() {
-  return getCountries().map(c => c.code.toUpperCase())
+  return getCountries().map(c => c.code?.toUpperCase()).filter(Boolean)
 }

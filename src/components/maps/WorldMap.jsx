@@ -17,7 +17,9 @@ import { getVisitedCountryCodes, getCountries } from '../../utils/dataLoader'
 // Map countries ISO-A2 codes to our country IDs
 // (GeoJSON uses ISO_A2 property)
 function getCountryIdByCode(countries, code) {
-  return countries.find(c => c.code.toUpperCase() === code.toUpperCase())?.id
+  // Guard: some GeoJSON features have null or "-99" as ISO_A2
+  if (!code || code === '-99') return undefined
+  return countries.find(c => c.code?.toUpperCase() === code.toUpperCase())?.id
 }
 
 export default function WorldMap({ height = '100%' }) {
