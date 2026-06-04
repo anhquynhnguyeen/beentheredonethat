@@ -1,0 +1,42 @@
+[
+  {
+    "id": "nl-2019-spring",
+    "name": "Netherlands — Spring 2019",
+    "countryIds": ["nl"],
+    "cityIds": ["amsterdam", "rotterdam"],
+    "startDate": "2019-04-12",
+    "endDate": "2019-04-18",
+    "notes": "First time in the Netherlands. Tulip season was in full bloom.",
+    "coverPhoto": ""
+  },
+  {
+    "id": "jp-2022-cherry-blossom",
+    "name": "Japan — Cherry Blossom 2022",
+    "countryIds": ["jp"],
+    "cityIds": ["tokyo", "kyoto"],
+    "startDate": "2022-03-20",
+    "endDate": "2022-04-02",
+    "notes": "A two-week trip timed around sakura season. Unforgettable.",
+    "coverPhoto": ""
+  },
+  {
+    "id": "pt-2021-summer",
+    "name": "Portugal — Summer 2021",
+    "countryIds": ["pt"],
+    "cityIds": ["lisbon", "porto"],
+    "startDate": "2021-06-15",
+    "endDate": "2021-06-28",
+    "notes": "Two weeks between Lisbon and Porto. Took the train between them.",
+    "coverPhoto": ""
+  },
+  {
+    "id": "nl-2023-autumn",
+    "name": "Netherlands — Autumn 2023",
+    "countryIds": ["nl"],
+    "cityIds": ["amsterdam"],
+    "startDate": "2023-09-03",
+    "endDate": "2023-09-07",
+    "notes": "A short return trip for work that turned into something more.",
+    "coverPhoto": ""
+  }
+]

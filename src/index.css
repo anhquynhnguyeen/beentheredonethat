@@ -1,0 +1,167 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── Base ────────────────────────────────────────────────────────────────── */
+@layer base {
+  html {
+    @apply text-ink-900 bg-parchment-100;
+    font-feature-settings: 'kern' 1, 'liga' 1;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    @apply font-sans text-base leading-relaxed;
+    min-height: 100dvh;
+  }
+
+  /* Typography scale */
+  h1 { @apply font-serif text-4xl md:text-5xl leading-tight tracking-tight; }
+  h2 { @apply font-serif text-2xl md:text-3xl leading-snug; }
+  h3 { @apply font-serif text-xl leading-snug; }
+  h4 { @apply font-sans text-sm font-semibold tracking-widest uppercase text-ink-500; }
+  p  { @apply text-ink-700 leading-relaxed; }
+
+  a {
+    @apply text-ink-900 underline-offset-4;
+    text-decoration-color: theme('colors.parchment.400');
+  }
+  a:hover {
+    text-decoration-color: theme('colors.accent');
+  }
+
+  /* Remove Leaflet's default blue outline on focus */
+  .leaflet-container {
+    @apply bg-parchment-200 font-sans;
+    outline: none;
+  }
+
+  /* Smooth scrolling */
+  * { scroll-behavior: smooth; }
+}
+
+/* ─── Components ──────────────────────────────────────────────────────────── */
+@layer components {
+
+  /* Page wrapper — consistent horizontal padding */
+  .page-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-8 lg:px-12;
+  }
+
+  /* Eyebrow label above headings */
+  .eyebrow {
+    @apply text-2xs font-sans font-semibold tracking-widest2 uppercase text-ink-400 mb-2;
+  }
+
+  /* Hairline divider */
+  .divider {
+    @apply border-t border-parchment-300 my-8;
+  }
+
+  /* Subtle card */
+  .card {
+    @apply bg-parchment-50 border border-parchment-200 rounded-sm
+           transition-colors duration-200 hover:border-parchment-400;
+  }
+
+  /* Pill tag */
+  .tag {
+    @apply inline-block text-2xs font-sans font-medium tracking-wider uppercase
+           px-2 py-0.5 bg-parchment-200 text-ink-500 rounded-sm;
+  }
+
+  /* Map wrapper — ensures Leaflet renders at full height */
+  .map-wrapper {
+    @apply relative w-full overflow-hidden rounded-sm border border-parchment-300;
+  }
+
+  /* Admin form inputs */
+  .form-input {
+    @apply w-full px-3 py-2 text-sm font-sans
+           bg-parchment-50 border border-parchment-300 rounded-sm
+           text-ink-800 placeholder-ink-400
+           focus:outline-none focus:border-accent
+           transition-colors duration-150;
+  }
+
+  .form-label {
+    @apply block text-xs font-semibold tracking-wider uppercase text-ink-500 mb-1.5;
+  }
+
+  .btn {
+    @apply inline-flex items-center gap-2 px-4 py-2 text-sm font-medium
+           border rounded-sm transition-colors duration-150 cursor-pointer;
+  }
+
+  .btn-primary {
+    @apply btn bg-ink-900 text-parchment-100 border-ink-900
+           hover:bg-ink-700;
+  }
+
+  .btn-secondary {
+    @apply btn bg-transparent text-ink-700 border-parchment-300
+           hover:border-ink-400 hover:text-ink-900;
+  }
+
+  .btn-danger {
+    @apply btn bg-transparent text-red-700 border-red-200
+           hover:bg-red-50;
+  }
+}
+
+/* ─── Leaflet overrides ───────────────────────────────────────────────────── */
+.leaflet-popup-content-wrapper {
+  @apply rounded-sm shadow-md;
+  background: theme('colors.parchment.50');
+  border: 1px solid theme('colors.parchment.300');
+}
+.leaflet-popup-tip {
+  background: theme('colors.parchment.50');
+}
+.leaflet-popup-content {
+  @apply font-sans text-sm text-ink-800;
+  margin: 10px 14px;
+}
+.leaflet-control-zoom a {
+  @apply font-sans;
+  color: theme('colors.ink.700');
+  background: theme('colors.parchment.50');
+  border-color: theme('colors.parchment.300');
+}
+.leaflet-control-zoom a:hover {
+  background: theme('colors.parchment.200');
+}
+.leaflet-control-attribution {
+  @apply text-2xs;
+  background: rgba(253, 252, 248, 0.8) !important;
+}
+
+/* ─── Masonry gallery ─────────────────────────────────────────────────────── */
+.masonry-grid {
+  columns: 2;
+  column-gap: 0.75rem;
+}
+@media (min-width: 768px)  { .masonry-grid { columns: 3; } }
+@media (min-width: 1024px) { .masonry-grid { columns: 4; } }
+
+.masonry-item {
+  break-inside: avoid;
+  margin-bottom: 0.75rem;
+}
+
+/* ─── Lightbox ─────────────────────────────────────────────────────────────── */
+.lightbox-overlay {
+  @apply fixed inset-0 z-50 flex items-center justify-center;
+  background: rgba(16, 15, 12, 0.92);
+}
+
+/* ─── Animations (minimal) ─────────────────────────────────────────────────── */
+@layer utilities {
+  .fade-in {
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(6px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+}

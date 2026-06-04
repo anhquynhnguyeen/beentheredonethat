@@ -1,0 +1,80 @@
+[
+  {
+    "id": "amsterdam",
+    "countryId": "nl",
+    "name": "Amsterdam",
+    "lat": 52.3676,
+    "lng": 4.9041,
+    "firstVisited": "2019-04-12",
+    "lastVisited": "2023-09-05",
+    "timesVisited": 3,
+    "coverPhoto": "",
+    "notes": "Every visit feels like the first. The Rijksmuseum alone justifies a trip.",
+    "tags": ["canals", "museums", "cycling"]
+  },
+  {
+    "id": "rotterdam",
+    "countryId": "nl",
+    "name": "Rotterdam",
+    "lat": 51.9225,
+    "lng": 4.4792,
+    "firstVisited": "2019-04-15",
+    "lastVisited": "2019-04-15",
+    "timesVisited": 1,
+    "coverPhoto": "",
+    "notes": "The architecture here is breathtaking — rebuilt from scratch after WWII with ambition.",
+    "tags": ["architecture", "modern", "port"]
+  },
+  {
+    "id": "tokyo",
+    "countryId": "jp",
+    "name": "Tokyo",
+    "lat": 35.6762,
+    "lng": 139.6503,
+    "firstVisited": "2022-03-20",
+    "lastVisited": "2022-03-27",
+    "timesVisited": 1,
+    "coverPhoto": "",
+    "notes": "A city that runs on a logic entirely its own. Overwhelming in the best possible way.",
+    "tags": ["food", "temples", "cherry-blossoms", "streets"]
+  },
+  {
+    "id": "kyoto",
+    "countryId": "jp",
+    "name": "Kyoto",
+    "lat": 35.0116,
+    "lng": 135.7681,
+    "firstVisited": "2022-03-27",
+    "lastVisited": "2022-04-02",
+    "timesVisited": 1,
+    "coverPhoto": "",
+    "notes": "The old Japan. Bamboo groves, moss gardens, tea houses — time moves differently here.",
+    "tags": ["temples", "bamboo", "tea", "geisha"]
+  },
+  {
+    "id": "lisbon",
+    "countryId": "pt",
+    "name": "Lisbon",
+    "lat": 38.7223,
+    "lng": -9.1393,
+    "firstVisited": "2021-06-15",
+    "lastVisited": "2021-06-21",
+    "timesVisited": 1,
+    "coverPhoto": "",
+    "notes": "The tiled buildings, the fado, the pastel de nata at closing time.",
+    "tags": ["tiles", "fado", "hills", "food"]
+  },
+  {
+    "id": "porto",
+    "countryId": "pt",
+    "name": "Porto",
+    "lat": 41.1579,
+    "lng": -8.6291,
+    "firstVisited": "2021-06-21",
+    "lastVisited": "2021-06-28",
+    "timesVisited": 1,
+    "coverPhoto": "",
+    "notes": "Narrower streets, rougher edges, better wine. Porto is Lisbon's scrappier sibling.",
+    "tags": ["port-wine", "bridges", "tiles", "river"]
+  }
+]
