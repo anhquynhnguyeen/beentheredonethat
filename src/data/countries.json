@@ -1,38 +1,20 @@
 [
   {
-    "id": "nl",
+    "id": "netherlands",
     "name": "Netherlands",
     "code": "NL",
     "continent": "Europe",
-    "firstVisited": "2019-04-12",
-    "lastVisited": "2023-09-05",
-    "timesVisited": 3,
+    "firstVisited": "2022-08-17",
+    "lastVisited": "2026-01-30",
+    "timesVisited": 4,
     "coverPhoto": "",
-    "notes": "A country of bicycles, tulips, and extraordinary museums. The light in spring is unlike anywhere else.",
-    "tags": ["cycling", "museums", "canals", "art"]
-  },
-  {
-    "id": "jp",
-    "name": "Japan",
-    "code": "JP",
-    "continent": "Asia",
-    "firstVisited": "2022-03-20",
-    "lastVisited": "2022-04-02",
-    "timesVisited": 1,
-    "coverPhoto": "",
-    "notes": "Cherry blossom season in Tokyo and Kyoto. The precision, the quiet, the food — nothing prepares you for it.",
-    "tags": ["temples", "food", "nature", "cherry-blossoms"]
-  },
-  {
-    "id": "pt",
-    "name": "Portugal",
-    "code": "PT",
-    "continent": "Europe",
-    "firstVisited": "2021-06-15",
-    "lastVisited": "2021-06-28",
-    "timesVisited": 1,
-    "coverPhoto": "",
-    "notes": "Lisbon's hills and tiles. Porto's port wine and bridges. The Atlantic always somewhere close.",
-    "tags": ["architecture", "food", "ocean", "tiles"]
+    "notes": "My second home",
+    "tags": [
+      "UvA",
+      "UvA BAN",
+      "canals",
+      "AH",
+      "memories"
+    ]
   }
 ]
